@@ -1,5 +1,6 @@
 import "dart:io";
 
+//Solution 1
 void main(){
   List<int> arr = []; //Initializing the empty List
   arr.addAll([int.parse(stdin.readLineSync()), int.parse(stdin.readLineSync())]); //Telling the useer to input two integers from the keyboard
@@ -7,7 +8,7 @@ void main(){
 }
 
 
-
+//Solution 2
 int sumOfTwoDigits(int a, int b){ //Using a function with two parameters 
   return a+b; //Adding the two parameters
 }
