@@ -6,7 +6,7 @@ import "dart:io";
 int fib(int n, int m){
   List<int> fib_arr = [0,1];
   for(int i = 2; i<=n; i++){
-    int value = (fib_arr[0] + fib_arr[1]) % m;
+    int value = (fib_arr[0] + fib_arr[1]) % m;//Use the second number to get the modulo
     fib_arr[0] = fib_arr[1];
     fib_arr[1] = value;
     }
