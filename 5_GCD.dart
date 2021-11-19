@@ -2,14 +2,14 @@
 import "dart:io";
 
 int naiveGCD(int a, int b){
-  int best = 0;
+  int best = 0; // saves the value for the greatest common divisor 
   
-  for(int d =1; d<=a+b; d++){
-    if(a % d ==0 && b % d == 0){
-      best = d;  
+  for(int d =1; d<=a+b; d++){ //Initializing the divisor, make sure it doesn't exceed the limit of the sum of the numbers, then run the iteration
+    if(a % d ==0 && b % d == 0){// if the modulo of the numbers to the divisor equals 0
+      best = d;  //save the value of the divior to best, then run again till you get the greatest
     }
   }
-return best;
+return best;//return the best
 }
 
 
@@ -28,7 +28,7 @@ int fastGCD(int a, int b){
     return a;
   }
   int aPrime = a % b;
-  return naiveGCD(b, aPrime);
+  return naiveGCD(b, aPrime);//returns the value of a as be and the value of b as aPrime and iterates until b equals 0
 }
 
 
