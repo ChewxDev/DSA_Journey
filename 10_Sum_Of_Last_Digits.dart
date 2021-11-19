@@ -8,17 +8,17 @@ int fib(int n){
 
   List<int> fib_arr = [0, 1];
 
-  int sum = 1;
+  int sum = 1;//We are setting sum to one since we're starting the for loop at 2, so we need to get the 1 at array index 1
 
   for(int i = 2; i<=n; i++){
-    int value = (fib_arr[1] + fib_arr[0]) % 10;
+    int value = (fib_arr[1] + fib_arr[0]) % 10;//Gets the last digits of the fib sequence
     fib_arr[0] = fib_arr[1];
     fib_arr[1] = value;
-    sum += value;
+    sum += value;//add sum to value to get the final sum
     //fib_arr.add(n);
   }
   print(fib_arr);
-  return sum % 10;
+  return sum % 10;//return the last digit of sum
 
 }
 
