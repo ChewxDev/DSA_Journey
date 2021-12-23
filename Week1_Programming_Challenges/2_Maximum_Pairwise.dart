@@ -3,7 +3,7 @@ import "dart:io";
 
 //Solution 1
 void main(){
-  int n = int.parse(stdin.readLineSync()); //Specifies The number of digits to be multiplied
+  int n = int.parse(stdin.readLineSync()!); //Specifies The number of digits to be multiplied
   
 
   
@@ -13,7 +13,7 @@ void main(){
 
 
   for(int i = 0; i<n; i++){
-    arr.add(int.parse(stdin.readLineSync())); //Populating the arr List using the limitation of the for loop to know the amount of elements to be added
+    arr.add(int.parse(stdin.readLineSync()!)); //Populating the arr List using the limitation of the for loop to know the amount of elements to be added
     //print(arr);
     if(max[0]<arr[i]){ //To get the maximum value, check if 0 is less than the the highest value of arr
       max[1] = max[0]; //Makes max at index 1 take the value of max at index 0
@@ -37,7 +37,7 @@ import "dart:io";
 import "dart:math";
 
 void main(){
-  int n = int.parse(stdin.readLineSync());
+  int n = int.parse(stdin.readLineSync()!);
   
 
   
@@ -72,7 +72,7 @@ void main(){
 import "dart:io";
 
 void main(){
-  int n = int.parse(stdin.readLineSync());
+  int n = int.parse(stdin.readLineSync()!);
   
 
   
@@ -85,7 +85,7 @@ void main(){
   }else if(n>=2){
 
   for(int i = 0; i<n; i++){
-    arr.add(int.parse(stdin.readLineSync()));
+    arr.add(int.parse(stdin.readLineSync()!));
     //print(arr);
     if(max[0]<arr[i]){
       max[1] = max[0];
