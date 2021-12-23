@@ -15,7 +15,7 @@ int fib(int n){
 }
 
 void main(){
-  int answer = fib(int.parse(stdin.readLineSync()));
+  int answer = fib(int.parse(stdin.readLineSync()!));
   print(answer);
   
 }
@@ -41,6 +41,6 @@ int fib(int n){
 }
 
 void main(){
-  int answer = fib(int.parse(stdin.readLineSync()));
+  int answer = fib(int.parse(stdin.readLineSync()!));
   print(answer);
 }
