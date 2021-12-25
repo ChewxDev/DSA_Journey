@@ -14,7 +14,7 @@ return best;//return the best
 
 
 void main(){
-  int answer = naiveGCD(int.parse(stdin.readLineSync()),int.parse(stdin.readLineSync()));
+  int answer = naiveGCD(int.parse(stdin.readLineSync()!),int.parse(stdin.readLineSync()!));
   print(answer);
 }
 
@@ -33,7 +33,7 @@ int fastGCD(int a, int b){
 
 
 void main(){
-  int answer = fastGCD(int.parse(stdin.readLineSync()),int.parse(stdin.readLineSync()));
+  int answer = fastGCD(int.parse(stdin.readLineSync()!),int.parse(stdin.readLineSync()!));
   print(answer);
 }
 
@@ -52,6 +52,6 @@ int GcdIterative(int a, int b){
 }
 
 void main(){
-  int answer = GcdIterative(int.parse(stdin.readLineSync()),int.parse(stdin.readLineSync()));
+  int answer = GcdIterative(int.parse(stdin.readLineSync()!),int.parse(stdin.readLineSync()!));
   print(answer);
 }
